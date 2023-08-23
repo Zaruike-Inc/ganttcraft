@@ -1,0 +1,80 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "plugin:react/recommended",
+        "google",
+        "prettier"
+    ],
+    "globals": {
+        "JSX": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2022,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "react-hooks/exhaustive-deps": "off",
+        "max-len": [
+            "error",
+            120
+        ],
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        // no params reassigned except using immer
+        "@typescript-eslint/no-unused-vars": [
+            "error"
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": true,
+                "ignorePropertyModificationsFor": [
+                    "draft",
+                    "draftState"
+                ]
+            }
+        ],
+        // don't use unused expressions except short circuit
+        "no-unused-expressions": [
+            "error",
+            {
+                "allowShortCircuit": true
+            }
+        ],
+        "@typescript-eslint/no-explicit-any": [
+            "error"
+        ],
+        // forbid to use 'any' type
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
+        "no-null/no-null": [
+            "off"
+        ],
+        "react/prop-types": "off",
+        "new-cap": "off",
+        "@typescript-eslint/explicit-function-return-type": ["off"],
+        "require-jsdoc": "off",
+        "@next/next/no-img-element": "off"
+    }
+}

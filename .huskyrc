@@ -1,0 +1,9 @@
+{
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+            "pre-push": "validate-branch-name",
+            "pre-commit": "npm run lint:fix"
+        }
+    }
+}

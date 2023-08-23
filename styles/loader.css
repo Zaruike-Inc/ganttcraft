@@ -1,0 +1,36 @@
+.ctn {
+    height: calc(100vh - 85px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loaderWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader span {
+    font-size: 24px;
+    font-weight: bold;
+    animation: bounce 0.8s infinite alternate;
+    opacity: 0;
+    margin: 0 4px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}

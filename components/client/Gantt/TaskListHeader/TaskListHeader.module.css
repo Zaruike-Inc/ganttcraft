@@ -1,0 +1,20 @@
+.containerH {
+    display: table;
+    border-top-left-radius: 6px;
+}
+
+.header {
+    display: table-row;
+    list-style: none;
+}
+
+.item {
+    padding-left: 0.25rem;
+    display: table-cell;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
+}
+
+.header .item:first-child {
+    padding-left: 0.5rem;
+}

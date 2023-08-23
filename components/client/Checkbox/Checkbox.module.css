@@ -1,0 +1,96 @@
+.inputCheckbox {
+    display: flex;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0.6em 0;
+    box-sizing: border-box;
+}
+.inputCheckbox input[type=checkbox] {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.inputCheckbox input[type=checkbox] + div {
+    border: 2px solid #8d9aa9;
+    height: 1.5em;
+    width: 1.5em;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+}
+.inputCheckbox input[type=checkbox] + div.isDark {
+    border: 0 solid #8d9aa9;
+}
+.inputCheckbox input[type=checkbox] ~ div:last-child {
+    padding-left: 0.75em;
+}
+.inputCheckbox input[type=checkbox]:focus + div,
+.inputCheckbox input[type=checkbox]:active + div {
+    outline: 2px dashed #8d9aa9;
+    outline-offset: 2px;
+}
+.inputCheckbox input[type=checkbox]:checked + div {
+    border-color: black;
+    transition: border-color 107ms cubic-bezier(0.65, 0.25, 0.56, 0.96);
+}
+.inputCheckbox input[type=checkbox]:checked + div .inputCheck {
+    opacity: 1;
+    transition: opacity 107ms cubic-bezier(0.65, 0.25, 0.56, 0.96);
+}
+.inputCheckbox input[type=checkbox]:checked + div .inputCheck polyline {
+    -webkit-animation: dash-check 107ms cubic-bezier(0.65, 0.25, 0.56, 0.96) forwards;
+    animation: dash-check 107ms cubic-bezier(0.65, 0.25, 0.56, 0.96) forwards;
+}
+.inputCheckbox input[type=checkbox]:indeterminate + div::after {
+    content: "";
+    height: 4px;
+    width: 60%;
+    left: 20%;
+    top: calc(50% - 2px);
+    position: absolute;
+    background: #8d9aa9;
+    border-radius: 1px;
+}
+.inputCheckbox input[type=checkbox]:disabled ~ div {
+    color: #8d9aa9;
+    cursor: not-allowed;
+}
+.inputCheckbox input[type=checkbox]:enabled ~ div {
+    cursor: default;
+}
+
+.inputCheck {
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    color: black;
+    opacity: 0;
+}
+.inputCheck polyline {
+    fill: none;
+    transform-origin: 50% 50%;
+    stroke-width: 5px;
+    stroke-dasharray: 22.7713679002;
+    stroke: currentcolor;
+}
+
+@supports (display: grid) {
+    .inputCheck polyline {
+        stroke-dashoffset: 22.7713679002;
+    }
+}
+@-webkit-keyframes dash-check {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes dash-check {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

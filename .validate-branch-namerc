@@ -1,0 +1,4 @@
+{
+   "pattern":"^(main|master|develop){1}$|^(feat|feature|bugfix|hotfix|chore|experiment|release)\/([\a-z-]+?)(\/\0-9)?$",
+   "errorMsg":"🤨 La branche que tu essaies de pusher ne respecte pas nos conventions, essaye de la renommer avec `git branch -m <nom-actuel> <nouveau-nom>`\nPour rappelle la branche dois se être constitué comme ceci : <type>/<name>/<issue_ID>"
+}

@@ -1,0 +1,93 @@
+{
+  "name": "ganttcraft",
+  "author": {
+    "email": "joris@studit.fr",
+    "name": "Joris Dugué",
+    "url": "https://joris.dugue.ml"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "license": "Apache-2.0",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node -r tsconfig-paths/register --project tsconfig.server.json main.ts",
+    "build": "next build && tsc --project tsconfig.server.json && tscpaths -p tsconfig.server.json -s ./ -o ./dist",
+    "test": "jest --watch --updateSnapshot",
+    "test:ci": "jest --config ./jest.config.js --collectCoverage --coverageDirectory=\\\"./coverage\\\" --ci --reporters=default --reporters=jest-junit --watchAll=false",
+    "lint": "next lint && eslint ./src/**/*.ts",
+    "lint:fix": "next lint && eslint ./src/**/*.ts --fix",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+    "postinstall": "husky install",
+    "start": "next start",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
+  },
+  "dependencies": {
+    "@fastify/compress": "^6.4.0",
+    "@fastify/cookie": "^9.0.4",
+    "@fastify/multipart": "^7.7.3",
+    "@fastify/oauth2": "^7.2.2",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@xascode/tscpaths": "^0.1.4",
+    "draftlog": "^1.0.13",
+    "fastify": "^4.21.0",
+    "gantt-task-react": "https://github.com/jorisdugue/gantt-task-react",
+    "jdenticon": "^3.2.0",
+    "jsonwebtoken": "^9.0.1",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.2",
+    "react-select": "^5.7.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.7.1",
+    "@commitlint/config-conventional": "17.7.0",
+    "@testing-library/jest-dom": "6.1.0",
+    "@testing-library/react": "14.0.0",
+    "@types/jest-axe": "3.5.5",
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "autoprefixer": "^10.4.15",
+    "eslint": "8.47.0",
+    "eslint-config-google": "0.14.0",
+    "eslint-config-next": "13.4.19",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-react": "7.33.2",
+    "husky": "8.0.3",
+    "jest": "29.6.3",
+    "jest-axe": "8.0.0",
+    "jest-environment-jsdom": "29.6.3",
+    "jest-junit": "16.0.0",
+    "jest-sonar-reporter": "2.0.0",
+    "postcss": "^8.4.28",
+    "prettier": "3.0.2",
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "standard-version": "9.5.0",
+    "tailwindcss": "^3.3.3",
+    "ts-jest": "29.1.1",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.1.6",
+    "validate-branch-name": "1.3.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

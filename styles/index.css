@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid .gridBody .rows rect {
+    fill: #fff;
+}
+
+.grid .gridBody .rows rect:nth-child(even) {
+    fill: whitesmoke;
+}

@@ -1,0 +1,25 @@
+.taskListCell {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.containerTasks {
+    border-bottom-left-radius: 6px;
+}
+
+.taskListExpander {
+    color: rgb(86 86 86);
+    font-size: 0.6rem;
+    padding: 0.15rem 0.2rem 0 0.2rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.taskListEmptyExpander {
+    font-size: 0.6rem;
+    padding-left: 0.5rem;
+    user-select: none;
+}
