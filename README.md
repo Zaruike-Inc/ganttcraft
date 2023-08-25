@@ -45,6 +45,52 @@ better understanding of the progress of the project.
 - Error Reduction : Automation ensures information is accurate and up-to-date, minimizing risk
   of human errors.
 
+## Todo :
+- [ ] Implement pagination for prevent the limitation of 100 issues by Gitlab and Github
+- [ ] Implement other provider
+   - [ ] Bitbucket
+   - [ ] Gitea
+- [ ] Meta data in issues / milestone
+
+# Installation / Deployment
+
+## Prerequisite
+
+- Node LTS or Latest
+- Typescript (if you using dev version)
+
+## Installation
+
+Copy the `.env.example` in ``.env``
+
+```yml
+# You can choose your provider here , gitlab, github, bitbucket, gitea
+GIT_PROVIDER="GITHUB"
+# Secret IN your GIT
+GIT_CLIENT_ID=
+GIT_CLIENT_SECRET=
+NEXT_PUBLIC_GIT_CALLBACK_DOMAIN=http://127.0.0.1:3081
+# For cookie configuration
+COOKIE_SECRET=
+# Facultative field here
+NEXT_PUBLIC_GIT_HOST="https://github.com"
+# Site name
+SITE_NAME="GanttCraft"
+```
+
+Start the dev server with nodemon
+```bash
+npx nodemon
+```
+
+Start the prod server with node.js
+```bash
+# If you have a dev version you need to build before with
+yarn build && cp .env ./build/.env
+cd build
+node main.js
+```
+
 ## Contributing
 
 GanttCraft is an open source project: your contribution is greatly appreciated! First make sure to have a look at the
