@@ -13,18 +13,28 @@
     ],
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "sourceMap": true,
+    "sourceMap": false,
+    "baseUrl": ".",
     "outDir": "dist",
-    "baseUrl": "./",
+    "declaration": true,
     "paths": {
       "#types/*": [
-        "types/*"
+        "./types/*"
       ],
       "#utils/*": [
-        "src/server/utils/*"
+        "./src/server/utils/*"
       ],
       "#srv/*": [
-        "src/server/*"
+        "./src/server/*"
+      ],
+      "#types/builder/*": [
+        "./types/builder/*"
+      ],
+      "#/srv/*": [
+        "./components/server/*"
+      ],
+      "#/client/*": [
+        "./components/client/*"
       ]
     },
     "jsx": "preserve",
