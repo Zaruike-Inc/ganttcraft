@@ -48,7 +48,7 @@ better understanding of the progress of the project.
 ## Contributing
 
 GanttCraft is an open source project: your contribution is greatly appreciated! First make sure to have a look at the
-[CONTRIBUTING guide](./CONTRIBUTING.md).
+[CONTRIBUTING guide](./CODE_OF_CONDUCT.md).
 
 ## Licence
 
