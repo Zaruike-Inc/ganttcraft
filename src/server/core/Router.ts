@@ -1,5 +1,5 @@
 import {FastifyInstance} from "fastify";
-import {IFastifyOptions} from "../../../types/IFastify";
+import {IFastifyOptions} from "#types/IFastify";
 
 export const Router = async (
     fastify: FastifyInstance,

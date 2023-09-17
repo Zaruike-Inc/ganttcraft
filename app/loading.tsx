@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/loader.css';
 
-export default function Loading() {
+export default function Loading(): React.JSX.Element {
     return <div className={`ctn`}>
         <div className="loaderWrapper">
             <div className="loader">
