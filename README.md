@@ -10,13 +10,13 @@ better understanding of the progress of the project.
 1. Intuitive Git Integration : GanttCraft seamlessly connects to chosen Git repositories, pulling
    automatically details numbers like descriptions, titles and managers.
 
-   | Provider         | Supported |
-   |------------------|-----------|
-   | Github           | &#x2705;  |
-   | Gitlab           | &#x2705;  |
-   | Gitlab Self Host | &#x2705;  |
-   | Bitbucket        | &#x274C;  |
-   | Gitea            | &#x274C;  |
+   | Provider         | Supported | Demo URL                             |
+   |------------------|-----------|--------------------------------------|
+   | Github           | &#x2705;  | https://github.ganttcraft.zaruike.fr |
+   | Gitlab           | &#x2705;  | https://gitlab.ganttcraft.zaruike.fr |
+   | Gitlab Self Host | &#x2705;  | https://gitlab.ganttcraft.zaruike.fr |
+   | Bitbucket        | &#x274C;  | `SOON`                               |
+   | Gitea            | &#x274C;  | `SOON`                               |
 
 2. Automated Gantt Chart Creation : By leveraging data from Git issues, GanttCraft generates
    automatically detailed Gantt charts, displaying the scheduling of tasks according to their due dates
@@ -57,7 +57,7 @@ better understanding of the progress of the project.
 ## Prerequisite
 
 - Node LTS or Latest
-- Typescript (if you using dev version)
+- Typescript (if you're using dev version or for building your prod version)
 
 ## Installation
 
@@ -86,9 +86,14 @@ npx nodemon
 Start the prod server with node.js
 ```bash
 # If you have a dev version you need to build before with
-yarn build && cp .env ./build/.env
-cd build
-node main.js
+# With yarn
+yarn build
+# With npm
+npm run build
+# With yarn
+yarn start:prod
+# With npm
+npm run start:prod
 ```
 
 ## Contributing

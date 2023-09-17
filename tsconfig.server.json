@@ -46,6 +46,7 @@
     "isolatedModules": true
   },
   "exclude": [
+    "src/app",
     "node_modules"
   ],
   "include": [

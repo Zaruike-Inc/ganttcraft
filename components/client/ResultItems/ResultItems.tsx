@@ -44,7 +44,6 @@ const ResultItems = (
     }
     useEffect(() => {
         setProjectsParsed(projects);
-        console.log(projects)
         if (projects !== undefined) {
             setCountItems({
                 project: projects.filter((e) => e.type === 'project' && allVisibility.includes(e.visibility)).length,
@@ -113,7 +112,7 @@ const ResultItems = (
                     projectsParsed !== null &&
                     projectsParsed.length > 0 &&
                     projectsParsed.map((p) => {
-                        // prevent déduplicate with this key
+                        // prevent deduplicate with this key
                         return <CardItem key={`${p.type}-${p.id}-${p.nameWithNameSpace}`} item={p}/>
                     })
                 }

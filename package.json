@@ -14,7 +14,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "ts-node -r tsconfig-paths/register --project tsconfig.server.json main.ts",
-    "build": "next build && tsc --project tsconfig.server.json && tscpaths -p tsconfig.server.json -s ./ -o ./dist",
+    "build": "tsc --project tsconfig.server.json && tscpaths -p tsconfig.server.json -s ./ -o ./dist && next build && cp .env ./dist/.env",
     "test": "jest --watch --updateSnapshot",
     "test:ci": "jest --config ./jest.config.js --collectCoverage --coverageDirectory=\\\"./coverage\\\" --ci --reporters=default --reporters=jest-junit --watchAll=false",
     "lint": "next lint && eslint ./src/**/*.ts",
@@ -22,6 +22,7 @@
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "postinstall": "husky install",
     "start": "next start",
+    "start:prod": "NODE_ENV=production && node dist/main",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",

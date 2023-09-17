@@ -87,7 +87,6 @@ const HomePageClient = ({data}: Props): React.JSX.Element => {
     }
 
     useEffect(() => {
-        console.log(data)
         if (data.valid && data.user !== undefined) {
             // authenticate the user
             dispatch(authenticateUser(data.user));
