@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@fastify/compress": "^6.4.0",
-    "@fastify/cookie": "^9.0.4",
+    "@fastify/cookie": "^9.1.0",
     "@fastify/multipart": "^7.7.3",
     "@fastify/oauth2": "^7.4.0",
     "@reduxjs/toolkit": "^1.9.5",
