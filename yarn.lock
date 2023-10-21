@@ -741,10 +741,10 @@
     secure-json-parse "^2.4.0"
     stream-wormhole "^1.1.0"
 
-"@fastify/oauth2@^7.4.0":
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/@fastify/oauth2/-/oauth2-7.4.0.tgz#49876957f1b9820a77c0ebcddc6a0c4513ffb6c8"
-  integrity sha512-9zvV/T4jWsCugjhkcjixhF6loaAHcnBQZHm/6i/SDfZGMr82MtjYa+MbLK/TMY+QwnsBJS6k+3+06kJ8DZFGYA==
+"@fastify/oauth2@^7.5.0":
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/@fastify/oauth2/-/oauth2-7.5.0.tgz#256b8e045f00d37dadf1c0d49e7b837a84a0e424"
+  integrity sha512-SxMRLekUT1FgE+PjGuiA0U9Z+v3Y35U26aJ8+/abat2YhffaI1YL1b1GQhrpePSDD/g720PkGK+epcklKyCcwg==
   dependencies:
     "@fastify/cookie" "^9.0.4"
     fastify-plugin "^4.5.1"
