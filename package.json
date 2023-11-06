@@ -54,7 +54,7 @@
     "@testing-library/jest-dom": "6.1.4",
     "@testing-library/react": "14.0.0",
     "@types/jest-axe": "3.5.7",
-    "@types/node": "^20.8.7",
+    "@types/node": "^20.8.10",
     "@types/react": "^18.2.31",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "autoprefixer": "^10.4.16",
