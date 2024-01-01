@@ -32,7 +32,7 @@
     "@fastify/compress": "^6.5.0",
     "@fastify/cookie": "^9.1.0",
     "@fastify/multipart": "^8.0.0",
-    "@fastify/oauth2": "^7.5.0",
+    "@fastify/oauth2": "^7.8.0",
     "@reduxjs/toolkit": "^1.9.7",
     "@types/jsonwebtoken": "^9.0.4",
     "@xascode/tscpaths": "^0.1.4",
