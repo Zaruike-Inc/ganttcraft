@@ -52,7 +52,7 @@
     "@commitlint/cli": "18.4.3",
     "@commitlint/config-conventional": "18.0.0",
     "@testing-library/jest-dom": "6.1.4",
-    "@testing-library/react": "14.0.0",
+    "@testing-library/react": "14.1.2",
     "@types/jest-axe": "3.5.7",
     "@types/node": "^20.8.7",
     "@types/react": "^18.2.46",
