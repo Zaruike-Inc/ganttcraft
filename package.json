@@ -37,7 +37,7 @@
     "@types/jsonwebtoken": "^9.0.4",
     "@xascode/tscpaths": "^0.1.4",
     "draftlog": "^1.0.13",
-    "fastify": "^4.24.3",
+    "fastify": "^4.26.1",
     "gantt-task-react": "https://github.com/jorisdugue/gantt-task-react",
     "jdenticon": "^3.2.0",
     "jsonwebtoken": "^9.0.2",
