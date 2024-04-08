@@ -34,7 +34,7 @@
     "@fastify/multipart": "^8.0.0",
     "@fastify/oauth2": "^7.8.0",
     "@reduxjs/toolkit": "^1.9.7",
-    "@types/jsonwebtoken": "^9.0.4",
+    "@types/jsonwebtoken": "^9.0.6",
     "@xascode/tscpaths": "^0.1.4",
     "draftlog": "^1.0.13",
     "fastify": "^4.24.3",
