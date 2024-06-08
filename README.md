@@ -10,26 +10,27 @@ better understanding of the progress of the project.
 1. Intuitive Git Integration : GanttCraft seamlessly connects to chosen Git repositories, pulling
    automatically details numbers like descriptions, titles and managers.
 
-   | Provider         | Supported | Demo URL                             |
-   |------------------|-----------|--------------------------------------|
-   | Github           | &#x2705;  | https://github.ganttcraft.zaruike.fr |
-   | Gitlab           | &#x2705;  | https://gitlab.ganttcraft.zaruike.fr |
-   | Gitlab Self Host | &#x2705;  | https://gitlab.ganttcraft.zaruike.fr |
-   | Bitbucket        | &#x274C;  | `SOON`                               |
-   | Gitea            | &#x274C;  | `SOON`                               |
+   | Provider         | Supported | Demo URL                              |
+   |------------------|-----------|---------------------------------------|
+   | Portail          |           | https://ganttcraft.zaruike.dev        |
+   | Github           | &#x2705;  | https://github.ganttcraft.zaruike.dev |
+   | Gitlab           | &#x2705;  | https://gitlab.ganttcraft.zaruike.dev |
+   | Gitlab Self Host | &#x2705;  | https://gitlab.ganttcraft.zaruike.dev |
+   | Bitbucket        | &#x274C;  | `SOON`                                |
+   | Gitea            | &#x274C;  | `SOON`                                |
 
-2. Automated Gantt Chart Creation : By leveraging data from Git issues, GanttCraft generates
+3. Automated Gantt Chart Creation : By leveraging data from Git issues, GanttCraft generates
    automatically detailed Gantt charts, displaying the scheduling of tasks according to their due dates
    deadline and their relationships.
 
-3. Collaborative visualization : GanttCraft's interactive interface allows team members to view
+4. Collaborative visualization : GanttCraft's interactive interface allows team members to view
    progress of the project and understand the dependencies between tasks, which promotes coordination and
    collaboration.
 
-4. Dynamic Synchronization : Changes to Git issues are automatically reflected in Git issues.
+5. Dynamic Synchronization : Changes to Git issues are automatically reflected in Git issues.
    Gantt charts, ensuring information stays up-to-date without the need for manual intervention.
 
-5. Simplified Personalization : Although alerts and export are not yet supported, GanttCraft
+6. Simplified Personalization : Although alerts and export are not yet supported, GanttCraft
    offers customization options to adjust the colors and styles of the tasks, thus adapting the interface to the
    user preferences.
 
